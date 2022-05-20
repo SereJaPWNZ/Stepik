@@ -6,5 +6,5 @@
 # Программа должна вывести одно число – номер купе, в котором находится указаное место.
 
 place = int(input())
-cupe = -number_tiket // 4
-print(-coup)
+cupe = -place // 4
+print(-cupe)
