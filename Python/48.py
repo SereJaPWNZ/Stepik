@@ -4,3 +4,11 @@
 # Формат выходных данных
 # Программа должна вывести «YES» или «NO» в соответствии с условием задачи.
 
+a, b, c = int(input()), int(input()), int(input())
+if a > 0 and b > 0 and c > 0:
+    if a < b + c and b < a + c and c < a + b:
+        print('YES')
+    else:
+        print('NO')
+else:
+    print('NO')
