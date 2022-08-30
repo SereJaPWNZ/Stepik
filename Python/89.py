@@ -8,4 +8,4 @@ Arithmetic_mean = (a + b)/2
 Geometric_Mean = (a * b)**0.5
 Average_Harmonic = 2*a*b/(a + b)
 Mean_Square = ((a**2 + b**2)/2)**0.5
-print(Arithmetic_mean, Geometric_Mean, Average_Harmonic, Mean_Square)
+print(Arithmetic_mean, Geometric_Mean, Average_Harmonic, Mean_Square, sep = '\n')
