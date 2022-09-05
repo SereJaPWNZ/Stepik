@@ -14,3 +14,7 @@ if sum_number == 0:
         print('0')
 else:
     print(sum_number)
+
+#вариант 2
+n = int(input())
+print(sum([i if i ** 2 % 10 in [2, 5, 8] else 0 for i in range(n)]))
