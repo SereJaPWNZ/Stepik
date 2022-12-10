@@ -4,3 +4,5 @@
 # Формат выходных данных
 # Программа должна вывести введённые три строки через разделитель.
 
+separator, str1, str2, str3 = input(), input(), input(), input()
+print(str1, str2, str3, sep = separator)
