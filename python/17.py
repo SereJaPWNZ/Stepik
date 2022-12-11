@@ -4,3 +4,5 @@
 # Формат выходных данных
 # Программа должна вывести одно число – стоимость покупки (трех компьютеров).
 
+monitor, system_unit, keyboard, mouse = int(input()), int(input()), int(input()), int(input())
+print((monitor + system_unit + keyboard + mouse)*3)
