@@ -5,6 +5,4 @@
 # Программа должна вывести три последовательно идущих числа в соответствии с условием задачи.
 
 number = int(input())
-number1 = number + 1
-number2 = number1 +1
-print(number, number1, number2, sep='\n')
+print(number, number + 1, number + 2, sep='\n')
