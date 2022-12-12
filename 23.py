@@ -5,3 +5,4 @@
 # Программа должна вывести два числа: количество мандаринов, которое достанется каждому школьнику, и количество мандаринов, которое останется в корзине, каждое на отдельной строке.
 
 number_of_schoolchildren, the_number_of_tangerines = int(input()), int(input())
+print(the_number_of_tangerines // number_of_schoolchildren, the_number_of_tangerines % number_of_schoolchildren, sep='\n')
