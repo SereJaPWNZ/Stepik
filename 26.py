@@ -4,3 +4,5 @@
 # Формат выходных данных
 # Программа должна вывести текст в соответствии с условием задачи.
 
+The_number_of_minutes = int(input())
+print(f'{The_number_of_minutes} мин - это {The_number_of_minutes // 60} час {The_number_of_minutes % 60} минут.')
