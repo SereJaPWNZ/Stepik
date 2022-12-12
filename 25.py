@@ -4,3 +4,6 @@
 # Формат выходных данных
 # Программа должна вывести одно число – номер купе, в котором находится указаное место.
 
+place_number = int(input())
+wagon_number = - place_number % 4
+print(-wagon_number)
