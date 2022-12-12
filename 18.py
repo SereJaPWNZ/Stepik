@@ -3,3 +3,6 @@
 # На вход программе подаётся два целых числа, каждое на отдельной строке.
 # Формат выходных данных
 # Программа должна вывести сумму, разность и произведение введённых чисел, каждое на отдельной строке.
+
+number1, number2= int(input()), int(input())
+print(f'{number1} + {number2} = {number1 + number2}\n{number1} - {number2} = {number1 - number2}\n{number1} * {number2} = {number1 * number2}')
