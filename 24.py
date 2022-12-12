@@ -5,3 +5,6 @@
 # Формат выходных данных
 # Программа должна вывести одно число – количество выживших.
 
+The_number_of_inhabitants = int(input())
+The_number_of_survivors = -The_number_of_inhabitants // 2
+print(-The_number_of_survivors)
