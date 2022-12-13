@@ -5,7 +5,7 @@
 # Программа должна вывести два числа с поясняющим текстом: сумма цифр и произведение цифр.
 
 number = int(input())
-последнее число = number % 10
-предпоследнее число = 
-первое число = 
-print(f'сумма цифр {}\n произведение цифр {}')
+The_last_number = number % 10
+The_penultimate_number = number % 100 // 10
+first_number = number // 100
+print(f'Сумма цифр = {The_last_number+The_penultimate_number+first_number}\nПроизведение цифр = {The_last_number*The_penultimate_number*first_number}')
