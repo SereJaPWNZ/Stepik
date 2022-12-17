@@ -5,4 +5,5 @@
 # Программа должна вывести «YES» или «NO» в соответствии с условием задачи.
 # Примечание. Треугольник существует, если выполняется неравенство треугольника.
 
-print()
+ab, bc, ac = int(input()), int(input()), int(input())
+print('YES' if ab < bc + ac and bc < ab + ac and ac < bc + ab else 'NO')
