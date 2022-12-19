@@ -6,9 +6,4 @@
 # Если Зум быстрее Флэша нужно вывести «NO», если Флэш быстрее Зума нужно вывести «YES», если их скорости равны нужно вывести "Don't know".
 
 n, k = int(input()), int(input())
-if n < k:
-    print('YES')
-elif n == k:
-    print("Don't know")
-else:
-    print('NO')
+print("Don't know" if n == k else 'YES' if n < k else 'NO')
