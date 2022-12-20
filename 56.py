@@ -3,3 +3,6 @@
 # На вход программе подаются два целых числа, каждое на отдельной строке, и строка.
 # Формат выходных данных
 # Программа должна вывести результат применения операции к введенным числам или соответствующий текст, если операция неверная либо если происходит деление на ноль.
+
+number1, number2, math_simbol = int(input()), int(input()), input()
+print('На ноль делить нельзя!' if number2 == 0 and math_simbol == '/' else number1 + number2 if math_simbol == '+' else number1 - number2 if math_simbol == '-' else number1 / number2 if math_simbol == '/' else number1 * number2 if math_simbol == '*' else 'Неверная операция')
