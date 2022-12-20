@@ -5,3 +5,5 @@
 # Формат выходных данных
 # Программа должна вывести количество дней в этом месяце.
 
+month = int(input())
+print(30 if month == 4 or month == 6 or month == 9 or month == 11 else 28 if month == 2 else 31)
