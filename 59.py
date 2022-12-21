@@ -12,27 +12,17 @@
 # Программа должна вывести на экран границы отрезка, являющегося пересечением, либо общую точку, либо текст «пустое множество».
 
 a1, b1, a2, b2 = int(input()), int(input()),  int(input()),  int(input())
-if b1 < a2 or b2 < a1: #1, 2
+if b1 < a2 or b2 < a1:
     print('пустое множество')
-elif a1 < a2 < b2 < b1: #3
+elif a1 < a2 < b2 < b1 or a1 == a2 < b2 < b1:
     print(a2, b2)
-elif a1 < a2 < b1 < b2: #4
+elif a1 < a2 < b1 < b2 or a1 < a2 < b2 == b1:
     print(a2, b1)
-elif a2 < a1 < b2 < b1: #5
+elif a2 < a1 < b2 < b1:
     print(a1, b2)
-elif a2 < a1 < b1 < b2: #6
-    print(a1, b1)
-elif a1 < b1 == a2 < b2: #7
+elif a1 < b1 == a2 < b2:
     print(b1)
-elif a2 < b2 == a1 < b1: #8
+elif a2 < b2 == a1 < b1:
     print(b2)
-elif a1 == a2 and b1 == b2: #9
+elif a1 == a2 and b1 == b2 or a1 == a2 and b1 < b2 or b1 == b2 and a2 < a1 or a2 < a1 < b1 < b2:
     print(a1, b1)
-elif a1 == a2 and b1 < b2: #10
-    print(a1, b1)
-elif b1 == b2 and a2 < a1: #11
-    print(a1, b1)
-elif a1 < a2 < b2 == b1: #12
-    print(a2, b1)
-elif a1 == a2 < b2 < b1: #13
-    print(a2, b2)
