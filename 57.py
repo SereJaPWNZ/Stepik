@@ -8,3 +8,18 @@
 # Формат выходных данных
 # Программа должна вывести полученный цвет смешения либо сообщение «ошибка цвета», если введён был не цвет.
 # Примечание 1. Если смешать красный и красный, то получится красный и т.д.
+
+color1, color2 = input(), input()
+# var1
+if color1 == color2 and (color1 == 'красный' or color1 == 'синий' or color1 == 'желтый'):
+    print(color1)
+elif color1 == 'красный' and color2 == 'синий' or color2 == 'красный' and color1 == 'синий':
+    print('фиолетовый')
+elif color1 == 'красный' and color2 == 'желтый' or color2 == 'красный' and color1 == 'желтый':
+    print('оранжевый')
+elif color1 == 'синий' and color2 == 'желтый' or color2 == 'синий' and color1 == 'желтый':
+    print('зеленый')
+else:
+    print('ошибка цвета')
+# var2 
+print(color1 if color1 == color2 and (color1 == 'красный' or color1 == 'синий' or color1 == 'желтый') else 'фиолетовый' if color1 == 'красный' and color2 == 'синий' or color2 == 'красный' and color1 == 'синий' else 'оранжевый' if color1 == 'красный' and color2 == 'желтый' or color2 == 'красный' and color1 == 'желтый' else 'зеленый' if color1 == 'синий' and color2 == 'желтый' or color2 == 'синий' and color1 == 'желтый' else 'ошибка цвета')
