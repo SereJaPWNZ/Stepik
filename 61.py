@@ -6,3 +6,29 @@
 # Программа должна вывести текст в соответствии с условием задачи.
 
 x1, y1, x2, y2 = int(input()), int(input()), int(input()), int(input())
+dark = 0
+light = 0
+if x1 % 2 == 0:
+    if y1 % 2 != 0:
+        dark += 1
+    else:
+        light += 1
+else:
+    if y1 % 2 != 0:
+        light += 1
+    else:
+        dark += 1
+if x2 % 2 == 0:
+    if y2 % 2 != 0:
+        dark += 1
+    else:
+        light += 1
+else:
+    if y2 % 2 != 0:
+        light += 1
+    else:
+        dark += 1
+if dark == 2 or light == 2:
+    print('YES')
+else:
+    print('NO')
