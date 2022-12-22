@@ -5,6 +5,7 @@
 # Формат выходных данных
 # Программа должна вывести текст в соответствии с условием задачи.
 
+# var1
 x1, y1, x2, y2 = int(input()), int(input()), int(input()), int(input())
 dark = 0
 light = 0
@@ -29,6 +30,13 @@ else:
     else:
         dark += 1
 if dark == 2 or light == 2:
+    print('YES')
+else:
+    print('NO')
+    
+#var 2    
+x1, y1, x2, y2 = int(input()), int(input()), int(input()), int(input())
+if (x1 + y1) % 2 == (x2 +y2) % 2:
     print('YES')
 else:
     print('NO')
