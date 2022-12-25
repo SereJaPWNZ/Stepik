@@ -10,3 +10,5 @@
 # Формат выходных данных
 # Программа должна вывести текст в соответствии с условием задачи.
 
+number = int(input())
+print('NO' if number % 2 == 0 and (2 <= number <= 5 or number >20) else 'YES')
