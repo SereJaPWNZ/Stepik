@@ -6,3 +6,5 @@
 # Формат выходных данных
 # Программа должна вывести три числа, каждое на отдельной строке, упорядоченных от большего к меньшему.
 
+list = (int(input()), int(input()), int(input()))
+print(max(list), sum(list) - max(list) - min(list), min(list), sep='\n')
