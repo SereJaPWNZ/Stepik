@@ -7,4 +7,21 @@
 # Программа должна вывести самое короткое и длинное название города, каждое на отдельной строке.
 # Примечание. Гарантируется, что длины названий всех трех городов различны.
 
-city_name1, city_name2, city_name3 = input(), input(), input()
+city1, city2, city3 = input(), input(), input()
+len_1 = len(city1)
+len_2 = len(city2)
+len_3 = len(city3)
+
+if len_1 > len_2:
+    if len_2 > len_3:
+        print(city3, city1, sep = '\n')
+    else:
+        print(city2, city1, sep = '\n')
+else: #len_2 > len_1
+    if len_1 > len_3:
+        print(city3, city2, sep = '\n')
+    else:
+        if len_3 > len_2:
+            print(city1, city3, sep = '\n')
+        else:
+            print(city1, city2, sep = '\n')
