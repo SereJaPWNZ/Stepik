@@ -6,4 +6,9 @@
 # Формат выходных данных
 # Программа должна вывести строку «YES», если из длин введенных слов можно построить арифметическую прогрессию, «NO» в ином случае.
 
-text1, text2, text3 = input(), input(), input()
+text1, text2, text3 = len(input()), len(input()), len(input())
+
+if ((abs(text1 - text2) == abs(text3 -text2)) or (abs(text3 - text1) == abs(text1 - text2)) or (abs(text3 - text1) == abs(text3 - text2))) and text1 != text2 and text1 != text3 and text2 != text3:
+    print('YES')
+else:
+    print('NO')
