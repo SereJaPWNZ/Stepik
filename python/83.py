@@ -17,7 +17,7 @@ if len_1 > len_2:
         print(city3, city1, sep = '\n')
     else:
         print(city2, city1, sep = '\n')
-else: #len_2 > len_1
+else:
     if len_1 > len_3:
         print(city3, city2, sep = '\n')
     else:
