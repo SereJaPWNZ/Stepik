@@ -7,4 +7,4 @@
 # Программа должна вывести текст в соответствии с условием задачи.
 
 text = input()
-print('YES' if (('суббота' in text) or ('воскресенье' in text)) else 'NO')
+print('YES' if 'суббота' in text or 'воскресенье' in text else 'NO')
