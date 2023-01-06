@@ -9,9 +9,12 @@
 # Программа должна вывести вещественные корни уравнения если они существуют или текст «Нет корней» в противном случае.
 # Примечание. Если уравнение имеет два корня, то следует вывести их в порядке возрастания.
 
-from math import sqrt
 a, b, c = float(input()), float(input()), float(input())
 D = b**2 - 4*a*c
-max_x = max((-b + sqrt(D))/2*a, (-b - sqrt(D))/2*a)
-min_x = min((-b + sqrt(D))/2*a, (-b - sqrt(D))/2*a)
-print((min_x, max_x) if D > 0 else (-b/2*a) if D == 0 else 'Нет корней')
+x1, x2 = (-b + D ** 0.5)/(2*a), (-b - D ** 0.5)/(2*a)
+if D > 0:
+    print(min(x1, x2), max(x1, x2), sep = '\n')
+elif D == 0:
+    print(-b/(2*a))
+else:
+    print('Нет корней')
