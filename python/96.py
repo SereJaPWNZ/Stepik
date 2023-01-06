@@ -7,5 +7,10 @@
 # Программа должна вывести указанное текстовое предложение нужное количество раз. Каждое повторение должно начинаться с новой строки.
 
 text, count = input(), int(input())
+#var1
 for _ in range(count):
     print(text)
+#var2
+print(text for _ in range(count))
+#var3
+print((text + '\n') * count)
