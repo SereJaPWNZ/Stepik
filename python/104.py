@@ -7,9 +7,5 @@
 # Программа должна вывести числа в соответствии с условием задачи.
 
 m, n = int(input()), int(input())
-if m < n:
-    for i in range(m, n + 1):
-        print(i)
-else:
-    for i in range(m, n - 1, -1):
-        print(i)
+for i in range(m, n + 1) or range(m, n - 1, -1):
+    print(i)
