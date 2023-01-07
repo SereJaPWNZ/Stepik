@@ -8,6 +8,5 @@
 # Программа должна вывести треугольник в соответствии с условием задачи.
 
 number = int(input())
-for _ in range(1, number + 1):
-    print(number*'*')
-    number-=1
+for i in range(number + 1):
+    print((number-i)*'*')
