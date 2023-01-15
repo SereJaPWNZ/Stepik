@@ -10,6 +10,5 @@
 sum_count = 0
 number = int(input())
 for i in range(number, 0, -1):
-    if number % i == 0:
-        sum_count += i
+    sum_count += i * (number % i == 0)
 print(sum_count)
