@@ -6,5 +6,10 @@
 # Выходные данные
 # Программа должна вывести единственное число в соответствии с условием задачи.
 
-for i in range(1, int(input())):
-    
+total_minus = 0
+total_plus = 0
+for i in range(1, int(input()) + 1):
+    total_plus += i * (i % 2 !=0 or i == 1)
+    total_minus -= i * (i % 2 == 0)
+total = total_minus + total_plus
+print(total)
