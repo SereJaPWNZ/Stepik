@@ -8,7 +8,6 @@
 
 counter, flag = 10, 'YES'
 for _ in range(counter):
-    temp_number = int(input())
-    if temp_number % 2 != 0:
+    if int(input()) % 2 != 0:
         flag = 'NO'
 print(flag)
