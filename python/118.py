@@ -11,4 +11,4 @@ for _ in range(counter):
     temp_number = int(input())
     if temp_number % 2 != 0:
         flag = 'NO'
-print(n)
+print(flag)
