@@ -6,10 +6,9 @@
 # Формат выходных данных
 # Программа должна вывести строку «YES», если все числа четные и «NO» в ином случае.
 
-counter = 10
-n = 'YES'
+counter, flag = 10, 'YES'
 for _ in range(counter):
     temp_number = int(input())
     if temp_number % 2 != 0:
-        n = 'NO'
+        flag = 'NO'
 print(n)
