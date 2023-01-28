@@ -6,3 +6,18 @@
 # На вход программе подается одно натуральное число, цена за услугу ведьмака.
 # Формат выходных данных
 # Программа должна вывести минимально возможное количество чеканных монет для оплаты.
+
+price, count = int(input()), 0
+while price >= 25:
+    count += 1
+    price -= 25
+while 9 < price < 25:
+    count += 1
+    price -= 10
+while 4 < price < 10:
+    count += 1
+    price -= 5
+while 0 < price < 5:
+    count += 1
+    price -= 1
+print(count)
