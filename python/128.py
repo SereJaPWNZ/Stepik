@@ -8,5 +8,6 @@
 
 number = int(input())
 while number != 0:
-    Reverse_number = str(number % 10)
-    
+    Reverse_number = number % 10
+    print(Reverse_number, end='')
+    number //= 10
