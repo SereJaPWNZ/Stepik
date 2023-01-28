@@ -6,3 +6,12 @@
 # Формат выходных данных
 # Программа должна вывести максимальную и минимальную цифры введенного числа (с поясняющей надписью).
 
+n, max_number, min_number = int(input()), 0, 9
+while n != 0:
+    temp_number = n % 10
+    if temp_number > max_number:
+        max_number = temp_number
+    if temp_number < min_number:
+        min_number = temp_number
+    n //= 10
+print(f'Максимальная цифра равна {max_number}\nМинимальная цифра равна {min_number}')
