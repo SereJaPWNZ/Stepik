@@ -6,3 +6,8 @@
 # Формат выходных данных
 # Программа должна вывести сумму членов данной последовательности.
 
+number, total = int(input()), 0
+while number >= 0:
+    total += number
+    number = int(input())
+print(total)
