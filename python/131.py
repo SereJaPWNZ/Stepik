@@ -6,9 +6,7 @@
 # Формат выходных данных
 # Программа должна вывести его вторую (с начала) цифру.
 
-n, reverse_number = int(input()), ''
-temp_n = n
-while temp_n != 0:
-    reverse_number += str(temp_n % 10)
-    temp_n //= 10
-print(int(reverse_number) // 10 % 10)
+n = int(input())
+while n > 99:
+    n //= 10
+print(n % 10)
