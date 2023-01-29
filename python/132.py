@@ -6,3 +6,16 @@
 # Формат выходных данных
 # Программа должна вывести «YES» если число состоит из одинаковых цифр и «NO» в противном случае.
 
+n, flag = int(input()), True
+text = 'YES'
+while n > 9:
+    last_n = n % 10
+    first_n = n // 10 % 10
+    if last_n == first_n:
+        flag = True
+    else:
+        flag = False
+        text = 'NO'
+        n = 0
+    n //= 10
+print(text)
