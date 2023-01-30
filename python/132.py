@@ -6,6 +6,7 @@
 # Формат выходных данных
 # Программа должна вывести «YES» если число состоит из одинаковых цифр и «NO» в противном случае.
 
+# var1
 n, flag = int(input()), True
 text = 'YES'
 while n > 9:
@@ -19,3 +20,11 @@ while n > 9:
         n = 0
     n //= 10
 print(text)
+
+# var2
+n = input()
+max_n, min_n = max(n), min(n)
+if max_n == min_n:
+    print('YES')
+else:
+    print('NO')
