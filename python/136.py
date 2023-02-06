@@ -21,3 +21,15 @@ else:
     print('NO')
     
 # review
+
+total_positive_numbers = 0
+work_of_numbers = 1
+for i in range(1, 11):
+    x = int(input())
+    if 0 <= x <= 10**6:
+        total_positive_numbers += 1
+        work_of_numbers *= x
+if total_positive_numbers == 0:
+    print('NO')
+else:
+    print(total_positive_numbers, work_of_numbers, sep = '\n')
