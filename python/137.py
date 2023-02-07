@@ -18,3 +18,16 @@ print(s)
 print(mx)
 
 # review
+
+min = - 10 ** 6 - 1
+s = 0
+for i in range(10):
+    x = int(input())
+    if x < 0:
+        s += x
+    if x > min and x < 0:
+        min = x
+if s < 0:
+    print(s, min, sep = '\n')
+else:
+    print('NO')
