@@ -18,7 +18,6 @@ print(s)
 print(mx)
 
 # review
-
 min = - 10 ** 6 - 1
 s = 0
 for i in range(10):
