@@ -8,3 +8,9 @@ n = int(input())
 while n > 0:
     n %= 10
 print(n)
+
+# review
+n = int(input())
+while n > 9:
+    n //= 10
+print(n)
