@@ -7,9 +7,16 @@
 n = input()
 product = n % 10
 while n >= 10:
-    digit = n % 10
+    digit = n % 100
     product = product * digit
     n //= 10
 print(product)
 
 #review
+n = int(input())
+product = 1
+while n > 0:
+    digit = n % 10
+    product = product * digit
+    n //= 10
+print(product)
