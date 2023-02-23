@@ -13,3 +13,7 @@
 # Программа должна вывести треугольник в соответствии с условием.
 # Примечание. Используйте вложенный цикл for.
 
+number, counter = int(input()), 1
+for i in range(1, number + 1):
+    print(counter*f'{i}')
+    counter += 1
