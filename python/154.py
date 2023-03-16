@@ -7,11 +7,12 @@
 # Программа должна вывести цифровой корень введенного числа.
 # Примечание. Используйте вложенные циклы while.
 
-number = int(input())
-sum_number = 0
-while number != 0:
-    sum_number += number % 10 + number // 10 % 10
-    number //= 100
-    if number == 0:
-        finally_sum_number = sum_number % 10 + sum_number // 10 % 10 
-print(finally_sum_number)
+n = int(input())
+while n > 9:
+    sum = 0
+    while n > 0:
+        last_digit = n % 10
+        sum += last_digit
+        n //= 10
+    n = sum
+print(n)    
