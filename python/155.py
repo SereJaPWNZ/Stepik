@@ -10,9 +10,18 @@
 
 
 # var 1
-from math import factorial
-n, sum_number = int(input()), 0
-for _ in range(1, n+1):
-    temp_number = factorial(_)
-    sum_number += temp_number
+# from math import factorial
+# n, sum_number = int(input()), 0
+# for _ in range(1, n+1):
+#     sum_number += factorial(_)
+# print(sum_number)
+
+# var 2
+
+n, k, sum_number = int(input()), 0, 0
+for i in range(1, n + 1):
+    multip = 1
+    for j in range(1, i + 1):
+        multip *= j
+    sum_number += multip
 print(sum_number)
