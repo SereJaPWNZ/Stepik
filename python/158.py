@@ -5,8 +5,4 @@
 # Формат выходных данных
 # Программа должна вывести «YES» если введенная строка заканчивается подстрокой .com или .ru и «NO» в противном случае.
 
-text = input()
-if text.endswith('.ru' or '.com'):
-    print('YES')
-else:
-    print('NO')
+print('YES' if input().endswith(('.ru', '.com')) else 'NO')
